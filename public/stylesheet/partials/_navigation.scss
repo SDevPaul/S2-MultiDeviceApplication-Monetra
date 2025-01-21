@@ -1,0 +1,126 @@
+@import "variables";
+
+.navigation-container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    .right-sidebar {
+        display: flex;
+        gap:10px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .menu-bar-mobile {
+
+        .container {
+
+            ion-icon {
+                padding: 12px;
+            }
+        }
+    }   
+}
+
+@media (min-width: 425px) and (max-width:768px) {
+    .menu-bar-mobile {
+
+        .container {
+
+            ion-icon {
+                padding: 20px;
+            }
+
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    
+    .menu-bar-laptop, .profile-btn{
+        display: none;
+    }
+
+    #pfp-btn {
+        display:flex;
+    }
+    
+    .menu-bar-mobile {
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%; 
+        display: flex; 
+        justify-content: center; 
+        z-index: 1000; 
+        
+
+        .container {
+            background-color: $secondary-color;
+            border-radius: 12px;
+            margin: 20px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+
+
+            ion-icon {
+                font-size: 1.8em;
+            }
+            ion-icon:first-child {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) {
+
+    .menu-bar-mobile {
+        display: none;
+    }
+
+    .menu-bar-laptop{
+        background-color: $secondary-color;
+        display: flex;
+        border-radius: 8px;
+        justify-content: center;
+        max-height: 36px;
+        .navigation-btn{
+            margin: auto;
+            padding: 10px 20px;
+            font-size: $text-small;
+        }
+
+        .navigation-btn:first-child {
+            color: $primary-color;
+        }
+        
+    }
+
+    #pfp-btn {
+        display: none;
+    }
+
+    .profile-btn {
+        background-color: $secondary-color;
+        display: flex;
+        padding: 4px 10px 4px 20px;
+        align-items: center ;
+        gap: 10px;
+        border-radius: 8px;
+        h6{
+            font-size: 12px;
+        }
+        p {
+            font-size: 10px;
+            color: $text-color2;
+        }
+        
+        ion-icon {
+            padding: 0;
+        }
+    }
+    
+}

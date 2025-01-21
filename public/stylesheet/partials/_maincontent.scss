@@ -1,0 +1,308 @@
+@import "variables";
+
+
+@media (max-width: 375px) {
+    .calendar-overview {
+        .btn-container a:nth-child(-n+2) {
+            display: none !important;
+        }
+    }
+}
+
+.main-contents {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    // grid-template-rows: repeat(15, auto);
+
+    #add-money-btn {
+        background-color: $secondary-color; 
+        border: 1px solid $primary-color;
+        color: $primary-color;
+    }
+    .calendar-overview{
+        column-gap: 20px;
+        // display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+
+        #transaction-history {
+            display: flex;
+            flex-direction: column;
+            // grid-column: 3;
+            // grid-template-columns: repeat(3, 1fr);
+            // grid-template-rows: auto;
+            gap: 8px;
+            max-height: 500px;
+            overflow: scroll;
+
+
+
+            .transaction-item {
+                // grid-column: 1/ span 3;
+                background-color: $secondary-color;
+                padding: 20px;
+                border-radius: 12px;
+                box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+
+                b {
+                    color: $primary-color;
+                }
+
+                .text-small {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+}
+
+.card {
+    padding: 16px;
+
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    
+    .budget-pie {
+        display: flex;
+        align-items: center;
+        ion-icon {
+            padding:0px 10px 0px;
+            font-size: 24px;
+            color:$text-color2;
+        }
+
+    }
+}
+@media (max-width:720px) {
+    .calendar-container {
+        display:none;
+    }
+
+    .calendar-overview {
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+
+        #transaction-history {
+            grid-column: 1/ span 3;
+
+        }
+    }
+    
+    
+}
+
+
+
+@media (min-width: 375px) and (max-width: 1024px) {
+    .financial-input {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+}
+
+@media (max-width:1023px) {
+
+    body {
+        
+        padding: 30px;
+
+        .main-contents {
+            margin-top: 30px;
+            // grid-template-rows: repeat(15, auto);    
+            gap: 16px;
+
+            
+            .financial-input {
+                grid-column: 1/ span 4;
+                grid-row: 2/ auto;
+                display: grid;
+                
+
+                .total-balance-display {
+                    p {
+                        font-size: 3.2rem;
+                    }
+                }
+
+                .transaction-btns {
+                    display: grid;
+                    gap: 4px;
+
+                }
+                
+            }
+
+            .money-tracker {
+                grid-column: 1/ span 4;
+                grid-row: 3/ span 3;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 8px;
+
+                .card {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                
+
+            }
+
+            .calendar-overview {
+                grid-column: 1/ span 4;
+                grid-row: 6;
+                min-height: 500px;
+                max-height: 800px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+
+                grid-template-rows: auto 1fr;
+                gap: 16px;
+
+                .headings {
+                    grid-column: 1/ span 3;
+                }
+        
+                .calendar-container {
+                    grid-column: 1/ span 2;
+                }
+            }
+
+            .budget-overview {
+                grid-column: 1/ span 4;
+                grid-row: 7/span 4;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                .budget-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                }
+
+            }
+
+            .my-plan {
+                grid-column: 1/ span 4;
+                grid-row: 11/span 5;
+                
+                .plan-container {
+                    display: grid;
+                    gap:8px;
+                    grid-template-columns: 1fr;
+                    .card {
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1023px){
+
+    .main-contents {
+        margin-top: 30px;
+        gap: 20px ;
+        // grid-template-rows: auto;
+
+
+        .money-tracker {
+            grid-column: 1/ span 3;
+            grid-row: 2;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+    
+        .financial-input {
+            grid-column: 4 /span 1;
+            grid-row: 2/span 2;
+            display: grid;
+
+            .transaction-btns {
+                display: grid;
+                gap: 8px;
+                margin-top: 20px;
+
+
+            }
+        }
+
+        .budget-overview {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .budget-container {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                .category {
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    .budget-pie {
+                        display: flex;
+                        align-items: center;
+                        ion-icon {
+                            padding:0px 10px 0px;
+                            font-size: 24px;
+                            color:$text-color2;
+                        }
+
+                    }
+                }
+            }
+        }
+
+
+        .calendar-overview {
+            grid-column: 1/ span 3;
+            grid-row: 3/span 2;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto 1fr;
+            row-gap: 8px;
+
+            .headings {
+                grid-column: 1/ span 3;
+            }
+    
+            .calendar-container {
+                grid-column: 1/ span 2;
+            }
+    
+
+        }
+
+        .my-plan {
+            grid-column: 1/ span 3;
+            grid-row: 5/span 3;
+            display: grid;
+            row-gap: 8px;
+
+    
+            .headings {
+                grid-column: 1/ span 3;
+            }
+    
+            .plan-container {
+                grid-column: 1/ span 3;
+
+                display: grid;
+                gap:20px;
+                grid-template-columns: repeat(3, 1fr);
+
+                .card {
+                    min-height: 200px;
+                }
+            }
+        }
+    }
+}

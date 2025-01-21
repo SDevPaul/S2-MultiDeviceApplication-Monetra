@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard - Monetra.</title>
+
+    <link rel="stylesheet" href="stylesheet/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header Container -->
+    <header class="navigation-container">
+
+        
+        <!-- Logo -->
+        <div class="logo">
+            Monetra.
+        </div>
+
+        <!-- Navigation Menu Bar for Laptop-->
+        <nav class="menu-bar-laptop">
+            <a href="" class="navigation-btn">Dashboard</a>
+            <a href="" class="navigation-btn">Calendar</a>
+            <a href="" class="navigation-btn">Budget</a>
+            <a href="" class="navigation-btn">Report</a>
+            <a href="" class="navigation-btn">Settings</a>
+        </nav>
+
+        <!-- Navigation Menu Bar for Mobile and Tablet -->
+        <nav class="menu-bar-mobile">
+            <div class="container">
+                <ion-icon name="grid"></ion-icon>
+                <ion-icon name="calendar-number"></ion-icon>
+                <ion-icon name="cash"></ion-icon>
+                <ion-icon name="stats-chart"></ion-icon>
+                <ion-icon name="settings"></ion-icon>
+            </div>
+
+        </nav>
+
+        <!-- Search Button, Notification Button, Profile Button -->
+        <section class="right-sidebar">
+            <ion-icon name="search"></ion-icon>
+            <ion-icon name="notifications"></ion-icon>
+            <ion-icon id="pfp-btn" name="person"></ion-icon>
+            <div class="profile-btn">
+
+                <div class="text-container">
+                    <h6>
+                        Paul Sevillejo
+                    </h6>
+                    <p>
+                        Free Plan
+                    </p>
+                </div>
+
+                <ion-icon name="chevron-down"></ion-icon>
+            </div>
+
+        </section>
+
+    </header>
+    
+    <main class="main-contents">
+        <h1>Dashboard</h1>
+        <!-- Sidebar Contents -->
+        <!-- <sidebar class="budget-bar"> -->
+
+            <!-- Tracks your total balance -->
+            <section class="card financial-input">
+                <div class="total-balance-display">
+                    <h3>Total Balance</h3>
+                    <p id="total-balance" class="text-xlarge">0.00</p>
+                </div>
+
+                <div class="transaction-btns">
+                    <button id="add-expense-btn">Add Expense</button>
+                    <button id="add-money-btn">Add Money</button>
+                </div>
+            </section>
+
+            <!-- Overview of how you distributed your money -->
+            <section class="budget-overview">
+                <section class="headings">
+                    <h2>Finances</h2>
+                    <div class="btn-container">
+                        <a  class="btn"><ion-icon name="ellipsis-horizontal"></ion-icon></a>
+                        <ion-icon class="btn" name="add"></ion-icon>
+                    </div>
+
+                </section>
+                <section class="budget-container">
+                    <div class="card category">
+                        <div class="budget-name">
+                            <h3 class="text-small">Category</h3>
+                            <p class="text-large">Title</p>
+                        </div>
+                        <div class="budget-pie">
+                            <ion-icon name="pie-chart"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="card category">
+                        <div class="budget-name">
+                            <h3 class="text-small">Category</h3>
+                            <p class="text-large">Title</p>
+                        </div>
+                        <div class="budget-pie">
+                            <ion-icon name="pie-chart"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="card category">
+                        <div class="budget-name">
+                            <h3 class="text-small">Category</h3>
+                            <p class="text-large">Title</p>
+                        </div>
+                        <div class="budget-pie">
+                            <ion-icon name="pie-chart"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="card category">
+                        <div class="budget-name">
+                            <h3 class="text-small">Category</h3>
+                            <p class="text-large">Title</p>
+                        </div>
+                        <div class="budget-pie">
+                            <ion-icon name="pie-chart"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="card category">
+                        <div class="budget-name">
+                            <h3 class="text-small">Category</h3>
+                            <p class="text-large">Title</p>
+                        </div>
+                        <div class="budget-pie">
+                            <ion-icon name="pie-chart"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="card category">
+                        <div class="budget-name">
+                            <h3 class="text-small">Category</h3>
+                            <p class="text-large">Title</p>
+                        </div>
+                        <div class="budget-pie">
+                            <ion-icon name="pie-chart"></ion-icon>
+                        </div>
+                    </div>
+                </section>
+
+
+            </section>
+
+        <!-- </sidebar> -->
+
+        <!-- Displays your Monthly Expenses, Income, and Remaining Money -->
+        <section class="money-tracker">
+            <div class="card income">
+                <h3>Monthly Income</h3>
+                <p class="text-xlarge">0.00</p>
+            </div>
+            <div class="card expenses">
+                <h3>Monthly Expense</h3>
+                <p class="text-xlarge">0.00</p>
+            </div>
+            <div class="card balance">
+                <h3>Monthly Balance</h3>
+                <p class="text-xlarge">0.00</p>
+            </div>
+        </section>
+
+        <!-- Calendar -->
+        <section class="calendar-overview">
+            <section class="headings"> 
+                <h2>Transaction Overview</h2>
+                <div class="btn-container">
+                    <a class="btn"><ion-icon name="filter"></ion-icon></a>
+                    <a class="btn"><ion-icon name="swap-vertical"></ion-icon></a>
+                    <a class="btn"><ion-icon name="ellipsis-horizontal"></ion-icon></a>
+                    <a class="btn"><ion-icon  name="add"></ion-icon></a>
+                </div>
+            </section> 
+
+            <!-- Calendar Overview -->
+            <section class="calendar-container card"> 
+
+            </section> 
+
+            <!-- Transaction Overview -->
+            <section id="transaction-history">
+                <div id="expense-list"></div>
+                <div id="money-added-list"></div>
+            </section>
+
+        </section>
+
+        <!-- Plan Overview -->
+        <section class="my-plan">
+            <section class="headings">
+                <h2>My Plan</h2>
+                <div class="btn-container">
+                    <a class="btn"><ion-icon name="filter"></ion-icon></a>
+                    <a class="btn"><ion-icon name="swap-vertical"></ion-icon></a>
+                    <a class="btn"><ion-icon name="ellipsis-horizontal"></ion-icon></a>
+                    <a class="btn"><ion-icon  name="add"></ion-icon></a>
+                </div>
+            </section>
+            <section class="plan-container">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </section>
+
+        </section>
+
+
+    </main>
+
+    <!-- Pop up Forms for Add Expenses and Add Money -->
+    <!-- <section class="expense-window">
+        <form id="expense-form">
+            <label for="expense">Enter Expense: </label>
+            <input type="number" id="expense" name="expense" required>
+            <button type="submit">Add Expense</button>
+        </form>
+    </section> -->
+
+
+
+    <!-- Icon Scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="function.js"></script>
+</body>
+</html>

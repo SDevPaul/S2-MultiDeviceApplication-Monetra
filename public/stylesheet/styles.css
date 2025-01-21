@@ -1,0 +1,472 @@
+/* 40px */
+/* 32px */
+/* 16px */
+/* 14px */
+/* 24px */
+/* 18px */
+/* 16px */
+/* 14px */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #eeeeee;
+}
+
+body {
+  padding: 10px;
+}
+body h1 {
+  font-size: 2.5rem;
+  color: #008080;
+  grid-row: 1;
+  grid-column: 1/span 4;
+}
+body h2 {
+  font-size: 2rem;
+  color: #008080;
+}
+body h3 {
+  font-size: 1rem;
+  color: #808080;
+  font-weight: 400;
+  font-size: 1em;
+}
+body button {
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  background-color: #008080;
+  color: #FFFFFF;
+  padding: 12px 0;
+  border-radius: 12px;
+  cursor: pointer;
+}
+body .text-xlarge {
+  font-size: 1.5rem;
+}
+body .text-large {
+  font-size: 1.125rem;
+}
+body .text-medium {
+  font-size: 1rem;
+}
+body .text-small {
+  font-size: 0.875rem;
+}
+body .icon {
+  width: 36px;
+  height: 36px;
+  padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, .logo {
+  font-family: "Work Sans", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.logo {
+  font-size: 0.875rem;
+}
+
+ion-icon {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.card {
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.headings {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+p, a {
+  color: #000000;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+a {
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+#add-expense-btn {
+  cursor: pointer;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.btn-container .btn {
+  display: flex;
+  align-items: center;
+}
+.btn-container .btn :hover {
+  background-color: #FFFFFF;
+}
+.btn-container .btn ion-icon {
+  background-color: #eeeeee;
+}
+.btn-container .btn:last-child {
+  display: flex;
+  background-color: #008080;
+  color: #FFFFFF;
+  stroke: #FFFFFF;
+  align-items: center;
+  padding: 10px;
+  gap: 8px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+.btn-container .btn:last-child ion-icon {
+  background-color: #008080;
+  border-radius: 12px;
+  padding: 0;
+}
+
+/* 40px */
+/* 32px */
+/* 16px */
+/* 14px */
+/* 24px */
+/* 18px */
+/* 16px */
+/* 14px */
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-container .right-sidebar {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 425px) {
+  .menu-bar-mobile .container ion-icon {
+    padding: 12px;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  .menu-bar-mobile .container ion-icon {
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .menu-bar-laptop, .profile-btn {
+    display: none;
+  }
+  #pfp-btn {
+    display: flex;
+  }
+  .menu-bar-mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .menu-bar-mobile .container {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  }
+  .menu-bar-mobile .container ion-icon {
+    font-size: 1.8em;
+  }
+  .menu-bar-mobile .container ion-icon:first-child {
+    color: #008080;
+  }
+}
+@media (min-width: 769px) {
+  .menu-bar-mobile {
+    display: none;
+  }
+  .menu-bar-laptop {
+    background-color: #FFFFFF;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    max-height: 36px;
+  }
+  .menu-bar-laptop .navigation-btn {
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 0.875rem;
+  }
+  .menu-bar-laptop .navigation-btn:first-child {
+    color: #008080;
+  }
+  #pfp-btn {
+    display: none;
+  }
+  .profile-btn {
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 4px 10px 4px 20px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+  }
+  .profile-btn h6 {
+    font-size: 12px;
+  }
+  .profile-btn p {
+    font-size: 10px;
+    color: #808080;
+  }
+  .profile-btn ion-icon {
+    padding: 0;
+  }
+}
+/* 40px */
+/* 32px */
+/* 16px */
+/* 14px */
+/* 24px */
+/* 18px */
+/* 16px */
+/* 14px */
+@media (max-width: 375px) {
+  .calendar-overview .btn-container a:nth-child(-n+2) {
+    display: none !important;
+  }
+}
+.main-contents {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.main-contents #add-money-btn {
+  background-color: #FFFFFF;
+  border: 1px solid #008080;
+  color: #008080;
+}
+.main-contents .calendar-overview {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.main-contents .calendar-overview #transaction-history {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 500px;
+  overflow: scroll;
+}
+.main-contents .calendar-overview #transaction-history .transaction-item {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.main-contents .calendar-overview #transaction-history .transaction-item b {
+  color: #008080;
+}
+.main-contents .calendar-overview #transaction-history .transaction-item .text-small {
+  opacity: 0.5;
+}
+
+.card {
+  padding: 16px;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+}
+.category .budget-pie {
+  display: flex;
+  align-items: center;
+}
+.category .budget-pie ion-icon {
+  padding: 0px 10px 0px;
+  font-size: 24px;
+  color: #808080;
+}
+
+@media (max-width: 720px) {
+  .calendar-container {
+    display: none;
+  }
+  .calendar-overview #transaction-history {
+    grid-column: 1/span 3;
+  }
+}
+@media (min-width: 375px) and (max-width: 1023px) {
+  .financial-input {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+@media (max-width: 1023px) {
+  body {
+    padding: 30px;
+  }
+  body .main-contents {
+    margin-top: 30px;
+    gap: 16px;
+  }
+  body .main-contents .financial-input {
+    grid-column: 1/span 4;
+    grid-row: 2/auto;
+    display: grid;
+  }
+  body .main-contents .financial-input .total-balance-display p {
+    font-size: 3.2rem;
+  }
+  body .main-contents .financial-input .transaction-btns {
+    display: grid;
+    gap: 4px;
+  }
+  body .main-contents .money-tracker {
+    grid-column: 1/span 4;
+    grid-row: 3/span 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  body .main-contents .money-tracker .card {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .main-contents .calendar-overview {
+    grid-column: 1/span 4;
+    grid-row: 6;
+    min-height: 500px;
+    max-height: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    gap: 16px;
+  }
+  body .main-contents .calendar-overview .headings {
+    grid-column: 1/span 3;
+  }
+  body .main-contents .calendar-overview .calendar-container {
+    grid-column: 1/span 2;
+  }
+  body .main-contents .budget-overview {
+    grid-column: 1/span 4;
+    grid-row: 7/span 4;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  body .main-contents .budget-overview .budget-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  body .main-contents .my-plan {
+    grid-column: 1/span 4;
+    grid-row: 11/span 5;
+  }
+  body .main-contents .my-plan .plan-container {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 1fr;
+  }
+  body .main-contents .my-plan .plan-container .card {
+    height: 200px;
+  }
+}
+@media (min-width: 1023px) {
+  .main-contents {
+    margin-top: 30px;
+    gap: 20px;
+  }
+  .main-contents .money-tracker {
+    grid-column: 1/span 3;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .main-contents .financial-input {
+    grid-column: 4/span 1;
+    grid-row: 2/span 2;
+    display: grid;
+  }
+  .main-contents .financial-input .transaction-btns {
+    display: grid;
+    gap: 8px;
+    margin-top: 20px;
+  }
+  .main-contents .budget-overview {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .main-contents .budget-overview .budget-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .main-contents .budget-overview .budget-container .category {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-contents .budget-overview .budget-container .category .budget-pie {
+    display: flex;
+    align-items: center;
+  }
+  .main-contents .budget-overview .budget-container .category .budget-pie ion-icon {
+    padding: 0px 10px 0px;
+    font-size: 24px;
+    color: #808080;
+  }
+  .main-contents .calendar-overview {
+    grid-column: 1/span 3;
+    grid-row: 3/span 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    row-gap: 8px;
+  }
+  .main-contents .calendar-overview .headings {
+    grid-column: 1/span 3;
+  }
+  .main-contents .calendar-overview .calendar-container {
+    grid-column: 1/span 2;
+  }
+  .main-contents .my-plan {
+    grid-column: 1/span 3;
+    grid-row: 5/span 3;
+    display: grid;
+    row-gap: 8px;
+  }
+  .main-contents .my-plan .headings {
+    grid-column: 1/span 3;
+  }
+  .main-contents .my-plan .plan-container {
+    grid-column: 1/span 3;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .main-contents .my-plan .plan-container .card {
+    min-height: 200px;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,166 @@
+@import "variables";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+html, body {
+    // height: 100%;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: $bg-color;
+}
+
+body {
+
+    padding: 10px;
+
+      
+    h1 {
+        font-size: $heading1;
+        color: $primary-color;
+        grid-row: 1; 
+        grid-column: 1/ span 4;
+    }
+    
+    h2 {
+        font-size: $heading2; 
+        color: $primary-color;
+    }
+    
+    h3 {
+        font-size: $heading3; 
+        color: $text-color2;       
+        font-weight: 400;
+        font-size: 1em;
+    }
+    
+    button {
+        font-size: $button-text; 
+        font-weight: 600; 
+        border: none;
+        background-color: $primary-color;
+        color: $secondary-color;
+        padding: 12px 0;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+    
+    .text-xlarge {
+        font-size: $text-xlarge;
+    }
+
+    .text-large {
+        font-size: $text-large;
+    }
+    
+    .text-medium {
+        font-size: $text-medium; 
+    }
+    
+    .text-small {
+        font-size: $text-small;
+    }
+    
+    // Icon size for consistency
+    .icon {
+        width: 36px;
+        height: 36px;
+        padding: 10px;
+    }
+
+      
+}
+
+h1,h2,h3,h4,h5,h6, .logo {
+    font-family: "Work Sans", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.logo {
+    font-size: 0.875rem;
+}
+
+ion-icon {
+    // background-color: $secondary-color;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.card {
+    background-color: $secondary-color;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.headings {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+p, a {
+    color: $text-color;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+
+    
+}
+
+a {
+    font-size: $text-small;
+    text-decoration: none;
+}
+
+#add-expense-btn {
+    cursor: pointer;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    .btn {
+        display: flex;
+        align-items: center;
+
+        :hover {
+            background-color: $secondary-color;
+        }
+
+        ion-icon {
+            background-color: $bg-color;
+        }
+    }
+
+
+
+    .btn:last-child {
+        display: flex;
+        background-color: $primary-color;
+        color: $secondary-color;
+        stroke: $secondary-color;
+        align-items: center;
+        padding: 10px;
+        gap:8px;
+        border-radius: 12px;
+        font-weight: 600;
+
+        ion-icon {
+            background-color: $primary-color;
+            border-radius: 12px;
+            padding: 0;
+        }
+    }
+}
+
